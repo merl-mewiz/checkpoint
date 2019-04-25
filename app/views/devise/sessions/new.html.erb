@@ -1,16 +1,14 @@
 <div class="container mt-4">
     <div class="row justify-content-center">
         <div class="col-12 col-sm-10 col-md-8 col-lg-6">
-            <h1>Вход</h1>
+            <h1 class="sign-form-h1">Вход</h1>
             <hr/>
             <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
                 <div class="form-group">
-                    <!-- <%= f.label :email, 'Электронная почта' %><br /> -->
                     <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => "form-control", :placeholder => 'Электронная почта' %>
                 </div>
 
                 <div class="form-group">
-                    <!-- <%= f.label :password, 'Пароль' %><br /> -->
                     <%= f.password_field :password, autocomplete: "current-password", :class => "form-control", :placeholder => 'Пароль' %>
                 </div>
 
@@ -25,7 +23,7 @@
                     <%= button_tag type: 'submit', class: "btn btn-dark col-sm-12 mb-2", id: "login-button" do %>
                         <i class="fa fa-sign-in fa-main-menu-licon" aria-hidden="true"></i> Войти
                     <% end %>
-                    <%= link_to "Восстановить пароль", new_password_path(resource_name) %><br />
+                    <%= link_to "Восстановить пароль", new_password_path(resource_name) %>
                 </div>
             <% end %>
         </div>

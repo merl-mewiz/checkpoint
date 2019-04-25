@@ -1,0 +1,163 @@
+/* Tex Gyre Heros */
+@font-face {
+	font-family: 'TexGyreHerosCyr';
+	src: url('../fonts/TeXGyreHeros-Regular.eot');
+	src: local('../fonts/TeXGyreHeros-Regular'),
+		url('../fonts/TeXGyreHeros-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TeXGyreHeros-Regular.woff') format('woff'),
+		url('../fonts/TeXGyreHeros-Regular.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TexGyreHerosCyr';
+	src: url('../fonts/TeXGyreHeros-Regular.eot');
+	src: local('../fonts/TeXGyreHeros-Regular'),
+		url('../fonts/TeXGyreHeros-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TeXGyreHeros-Regular.woff') format('woff'),
+		url('../fonts/TeXGyreHeros-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TexGyreHerosCyr';
+	src: url('../fonts/TeXGyreHeros-Italic.eot');
+	src: local('../fonts/TeXGyreHeros-Italic'),
+		url('../fonts/TeXGyreHeros-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TeXGyreHeros-Italic.woff') format('woff'),
+		url('../fonts/TeXGyreHeros-Italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'TexGyreHerosCyr';
+	src: url('../fonts/TeXGyreHeros-Italic.eot');
+	src: local('../fonts/TeXGyreHeros-Italic'),
+		url('../fonts/TeXGyreHeros-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TeXGyreHeros-Italic.woff') format('woff'),
+		url('../fonts/TeXGyreHeros-Italic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'TexGyreHerosCyr';
+	src: url('../fonts/TeXGyreHeros-Bold.eot');
+	src: local('../fonts/TeXGyreHeros-Bold'),
+		url('../fonts/TeXGyreHeros-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TeXGyreHeros-Bold.woff') format('woff'),
+		url('../fonts/TeXGyreHeros-Bold.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TexGyreHerosCyr';
+	src: url('../fonts/TeXGyreHeros-Bold.eot');
+	src: local('../fonts/TeXGyreHeros-Bold'),
+		url('../fonts/TeXGyreHeros-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TeXGyreHeros-Bold.woff') format('woff'),
+		url('../fonts/TeXGyreHeros-Bold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TexGyreHerosCyr';
+	src: url('../fonts/TeXGyreHeros-BoldItalic.eot');
+	src: local('../fonts/TeXGyreHeros-BoldItalic'),
+		url('../fonts/TeXGyreHeros-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TeXGyreHeros-BoldItalic.woff') format('woff'),
+		url('../fonts/TeXGyreHeros-BoldItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'TexGyreHerosCyr';
+	src: url('../fonts/TeXGyreHeros-BoldItalic.eot');
+	src: local('../fonts/TeXGyreHeros-BoldItalic'),
+		url('../fonts/TeXGyreHeros-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TeXGyreHeros-BoldItalic.woff') format('woff'),
+		url('../fonts/TeXGyreHeros-BoldItalic.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+}
+
+/* Tex Gyre Heros Condensed */
+@font-face {
+	font-family: 'TexGyreHerosCondensedCyr';
+	src: url('../fonts/TeXGyreHerosCondensed-Regular.eot');
+	src: local('../fonts/TeXGyreHerosCondensed-Regular'),
+		url('../fonts/TeXGyreHerosCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TeXGyreHerosCondensed-Regular.woff') format('woff'),
+		url('../fonts/TeXGyreHerosCondensed-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TexGyreHerosCondensedCyr';
+	src: url('../fonts/TeXGyreHerosCondensed-Regular.eot');
+	src: local('../fonts/TeXGyreHerosCondensed-Regular'),
+		url('../fonts/TeXGyreHerosCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TeXGyreHerosCondensed-Regular.woff') format('woff'),
+		url('../fonts/TeXGyreHerosCondensed-Regular.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TexGyreHerosCondensedCyr';
+	src: url('../fonts/TeXGyreHerosCondensed-Italic.eot');
+	src: local('../fonts/TeXGyreHerosCondensed-Italic'),
+		url('../fonts/TeXGyreHerosCondensed-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TeXGyreHerosCondensed-Italic.woff') format('woff'),
+		url('../fonts/TeXGyreHerosCondensed-Italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'TexGyreHerosCondensedCyr';
+	src: url('../fonts/TeXGyreHerosCondensed-Italic.eot');
+	src: local('../fonts/TeXGyreHerosCondensed-Italic'),
+		url('../fonts/TeXGyreHerosCondensed-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TeXGyreHerosCondensed-Italic.woff') format('woff'),
+		url('../fonts/TeXGyreHerosCondensed-Italic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'TexGyreHerosCondensedCyr';
+	src: url('../fonts/TeXGyreHerosCondensed-Bold.eot');
+	src: local('../fonts/TeXGyreHerosCondensed-Bold'),
+		url('../fonts/TeXGyreHerosCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TeXGyreHerosCondensed-Bold.woff') format('woff'),
+		url('../fonts/TeXGyreHerosCondensed-Bold.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TexGyreHerosCondensedCyr';
+	src: url('../fonts/TeXGyreHerosCondensed-Bold.eot');
+	src: local('../fonts/TeXGyreHerosCondensed-Bold'),
+		url('../fonts/TeXGyreHerosCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TeXGyreHerosCondensed-Bold.woff') format('woff'),
+		url('../fonts/TeXGyreHerosCondensed-Bold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TexGyreHerosCondensedCyr';
+	src: url('../fonts/TeXGyreHerosCondensed-BoldItalic.eot');
+	src: local('../fonts/TeXGyreHerosCondensed-BoldItalic'),
+		url('../fonts/TeXGyreHerosCondensed-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TeXGyreHerosCondensed-BoldItalic.woff') format('woff'),
+		url('../fonts/TeXGyreHerosCondensed-BoldItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'TexGyreHerosCondensedCyr';
+	src: url('../fonts/TeXGyreHerosCondensed-BoldItalic.eot');
+	src: local('../fonts/TeXGyreHerosCondensed-BoldItalic'),
+		url('../fonts/TeXGyreHerosCondensed-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TeXGyreHerosCondensed-BoldItalic.woff') format('woff'),
+		url('../fonts/TeXGyreHerosCondensed-BoldItalic.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+}

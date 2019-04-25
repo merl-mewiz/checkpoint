@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= @sitepage_title %></title>
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
+
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= stylesheet_link_tag 'animate', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= stylesheet_link_tag 'font-awesome', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= stylesheet_link_tag 'texgyreheros-webfont', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-sm bg-light main-navbar">
+            <div class="container">
+                <%= link_to root_path, :class=>"navbar-brand", :title=>"На главную" do %>
+                    <%= image_tag "cp-logo3.png", class: "main-logo" %>
+                <% end %>
+
+                <% unless user_signed_in? %>
+                    <ul class="navbar-nav">
+                        <li class="nav-item mr-2">
+                            <a class="btn btn-sm btn-light main-nav-btn" href="<%= new_user_session_path %>">
+                                <i class="fa fa-sign-in fa-main-menu-licon" aria-hidden="true"></i> Вход
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-sm btn-primary main-nav-btn" href="<%= new_user_registration_path %>">
+                                <i class="fa fa-pencil-square-o fa-main-menu-licon" aria-hidden="true"></i> Регистрация
+                            </a>
+                        </li>
+                    </ul>
+                <% end %>
+            </div>
+        </nav>
+
+        <%= yield %>
+    </body>
+</html>

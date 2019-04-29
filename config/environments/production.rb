@@ -92,6 +92,19 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+  config.action_mailer.default_url_options = { :host => "http://localhost:3000" }
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.beget.com',
+    port:                 25,
+    domain:               '4eckpoint.ru',
+    user_name:            'info@4eckpoint.ru',
+    password:             'YtLevfq13',
+    authentication:       'plain',
+    enable_starttls_auto: false
+  }
+
   ActionView::Base.field_error_proc = Proc.new do |html_tag, instance|
     html_tag.html_safe
   end

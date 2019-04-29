@@ -39,6 +39,10 @@
                             </li>
                         </ul>
                     </div>
+                <% else %>
+                    <%= link_to destroy_user_session_path, :method => :delete, :class=>"btn btn-sm btn-light main-nav-btn" do %>
+                        <i class="fa fa-sign-out fa-main-menu-licon" aria-hidden="true"></i> Выход
+                    <% end %>
                 <% end %>
             </div>
         </nav>

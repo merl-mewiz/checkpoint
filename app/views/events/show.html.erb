@@ -1,0 +1,32 @@
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <p id="notice"><%= notice %></p>
+
+            <p>
+                <strong>Name:</strong>
+                <%= @event.name %>
+            </p>
+
+            <p>
+                <strong>Description:</strong>
+                <%= @event.description %>
+            </p>
+            <p>
+                <strong>Адрес:</strong>
+                <%= @addr['reversegeocode']['addressparts']['road'] %>, <%= @addr['reversegeocode']['addressparts']['house_number'] %> (<%= @addr['reversegeocode']['addressparts']['city'] %>)
+            </p>
+
+            <%= link_to 'Edit', edit_event_path(@event) %> |
+            <%= link_to 'Back', events_path %>
+
+            <div id="map" class="col-12" style="height:500px;">
+                <%= map(:center => {
+                        :latlng => [@event.latitude, @event.longitude],
+                        :zoom => 18},
+                        :markers => [{:latlng => [@event.latitude, @event.longitude],}]
+                        ) %>
+            </div>
+        </div>
+    </div>
+</div>

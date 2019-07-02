@@ -14,11 +14,42 @@
     </head>
 
     <body>
+
+        <!-- The Modal -->
+        <div class="modal" id="selectCity">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Выбор города</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        Modal body..
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Сохранить</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
         <nav class="navbar navbar-expand-sm bg-light main-navbar">
             <div class="container">
                 <%= link_to root_path, :class=>"navbar-brand", :title=>"На главную" do %>
                     <%= image_tag "cp-logo3.png", class: "main-logo" %>
                 <% end %>
+                <span class="ml-1" data-toggle="popover" data-trigger="hover" data-content="Some content">
+                    <button type="button" class="btn btn-sm btn-light main-nav-btn" data-toggle="modal" data-target="#selectCity" title="Выбрать другой город">
+                        <i class="fa fa-map-marker main-nav-btn-icon mr-1" aria-hidden="true"></i> Ростов-на-Дону
+                    </button>
+                </span>
 
                 <button class="navbar-toggler btn btn-light" type="button" data-toggle="collapse" data-target="#cpMainNav">
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
@@ -27,21 +58,21 @@
                 <% unless user_signed_in? %>
                     <div class="collapse navbar-collapse justify-content-between" id="cpMainNav">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item mr-2">
+                            <li class="nav-item mr-1">
                                 <a class="btn btn-sm btn-light main-nav-btn" href="<%= new_user_session_path %>">
-                                    <i class="fa fa-sign-in fa-main-menu-licon" aria-hidden="true"></i> Вход
+                                    <i class="fa fa-sign-in main-nav-btn-icon mr-1" aria-hidden="true"></i> Вход
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="btn btn-sm btn-primary main-nav-btn" href="<%= new_user_registration_path %>">
-                                    <i class="fa fa-pencil-square-o fa-main-menu-licon" aria-hidden="true"></i> Регистрация
+                                    <i class="fa fa-pencil-square-o main-nav-btn-icon mr-1" aria-hidden="true"></i> Регистрация
                                 </a>
                             </li>
                         </ul>
                     </div>
                 <% else %>
-                    <%= link_to destroy_user_session_path, :method => :delete, :class=>"btn btn-sm btn-light main-nav-btn" do %>
-                        <i class="fa fa-sign-out fa-main-menu-licon" aria-hidden="true"></i> Выход
+                    <%= link_to destroy_user_session_path, :method => :delete, :class=>"btn btn-sm btn-primary main-nav-btn" do %>
+                        <i class="fa fa-sign-out main-nav-btn-icon mr-1" aria-hidden="true"></i> Выход
                     <% end %>
                 <% end %>
             </div>

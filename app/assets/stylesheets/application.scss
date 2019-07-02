@@ -13,12 +13,27 @@
  *= require leaflet
  */
 
- @import "bootstrap";
+@import "bootstrap";
+@import "colors";
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic');
 
- body {font-family: 'TexGyreHerosCyr';font-weight: 300;font-style: normal;}
- h1.sign-form-h1 {font-size:26px;color:#434343;}
+body {font-family: 'Roboto', sans-serif;font-weight:400;font-style: normal;}
+h1 {font-size:44px;color:#333;margin-bottom:22px;font-weight:700;}
+h1.main-h1 {font-size:32px;margin-bottom:10px;}
+h2 {font-size:32px;color:#333;margin-bottom:16px;}
+h3 {font-size:24px;color:#333;margin-bottom:16px;}
+h4 {font-size:18px;color:#333;margin-bottom:9px;}
+p {font-size:16px;color:#333;}
+a {color:#08c;text-decoration:none;}
+a:hover {text-decoration:underline;color:#E53935;}
+.btn-link {color:#08c;}
+.btn-link:hover {text-decoration:none;color:#E53935;}
 
- .main-navbar {border-bottom:1px solid #d8d8d8;}
- .main-logo {width:150px;}
- .main-nav-btn {padding-bottom:4px;}
- .fa-main-menu-licon {margin-right:2px;}
+h1.sign-form-h1 {font-size:26px;color:#434343;}
+
+.main-navbar {border-bottom:1px solid #d8d8d8;}
+.main-logo {width:150px;}
+.main-nav-btn {padding: 4px 15px 6px 15px;}
+.main-nav-btn-icon {}
+.main-city {font-size:14px;margin-top:-1px;}
+.main-city a {color:#333;}

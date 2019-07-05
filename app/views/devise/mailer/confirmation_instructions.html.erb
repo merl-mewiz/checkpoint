@@ -1,5 +1,7 @@
-<p>Welcome <%= @email %>!</p>
+<h2>Здравствуйте!</h2>
+<p>Ваш e-mail <strong><%= @email %></strong> был указан при регистрации на сайте <a href="https://4po.ru" target="_blank">Checkpoint</a></p>
+<p>Для подтверждения регистрации пройдите по ссылке: <%= link_to 'Подтвердить аккаунт', confirmation_url(@resource, confirmation_token: @token) %></p>
+<p>Если Вы не регистрировались на сайте, не переходите по ссылке "Подтвердить аккаунт" и проигнорируйте это письмо.</p>
 
-<p>You can confirm your account email through the link below:</p>
-
-<p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+<p>Если возникнут трудности с активацией или входом, напишите нам по адресу <a href="mailto:support@4po.ru">support@4po.ru</a> и мы обязательно поможем Вам!</p>
+<p>С уважением, команда Checkpoint</p>
